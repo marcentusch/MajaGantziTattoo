@@ -60,7 +60,7 @@
                 Tattoo artist in training
               </p>
               <a href="#about" class="btn btn-circle js-scroll-trigger">
-                <i class="fa fa-angle-double-down animated"></i>
+                <i class="fa fa-lg fa-angle-double-down animated"></i>
               </a>
             </div>
           </div>
@@ -109,7 +109,7 @@
           <div class="col-lg-8 mx-auto">
             <h2>  </h2>
             <p>
-              Følg mig på diverse sociale medier for at se mit arbejde og få gode tilbud
+              Følg mig på diverse sociale medier for at se mere af mit arbejde og få gode tilbud
             </p>
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
@@ -120,14 +120,14 @@
               </li>
               <li class="list-inline-item">
                 <a href="#" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
+                  <i class="fa fa-instagram fa-fw"></i>
+                  <span class="network-name">Instagram</span>
                 </a>
               </li>
               <li class="list-inline-item">
                 <a href="#" class="btn btn-default btn-lg">
-                  <i class="fa fa-google-plus fa-fw"></i>
-                  <span class="network-name">Google+</span>
+                  <i class="fa fa-facebook fa-fw"></i>
+                  <span class="network-name">Facebook</span>
                 </a>
               </li>
             </ul>
@@ -139,7 +139,7 @@
     <!-- Footer -->
     <footer>
       <div class="container text-center">
-        <p>Copyright &copy; Your Website 2018</p>
+        <p>Copyright &copy; majagantzi.com 2018</p>
       </div>
     </footer>
 
@@ -159,25 +159,25 @@
                 {
                     "title": "Fætter Lasse tattoo",
                     "customer": "Lasse",
-                    "date": "5/5/18 maj",
+                    "date": "5-5-18",
                     "image": "https://i.imgur.com/hBqeKLI.jpg"
                 },
                 {
                     "title": "Jonas tattoo right arm",
                     "customer": "Jonas",
-                    "date": "5/5/18",
+                    "date": "5-5-18",
                     "image": "https://i.imgur.com/yEZWmRD.jpg"
                 },
                 {
                     "title": "Jonas tattoo left arm",
                     "customer": "Joans",
-                    "date": "5/5/18",
+                    "date": "5-5-18",
                     "image": "https://i.imgur.com/2IqjJ0F.jpg"
                 },
                 {
                     "title": "Martina tattoo",
                     "customer": "Martina",
-                    "date": "9/5/18",
+                    "date": "9-5-18",
                     "image": "https://i.imgur.com/U33Sm1P.jpg"
                 }
             ]
@@ -187,8 +187,8 @@
         function loadTattoos() {
             tattooData.tattoos.forEach(tattoo => {
               const tattooTemplate = `
-              <div class="col-lg-4 mb-4 test">
-                <img src="` + tattoo.image + `" class="img-fluid" alt="Responsive image">
+              <div class="col-lg-4 mb-4 test thumbnail">
+                <img src="` + tattoo.image + `" class="img-fluid tattoo-image" alt="Responsive image">
               </div>
               `;
               $( ".tattoos" ).append(tattooTemplate);
