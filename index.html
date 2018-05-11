@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>Maja Gantzi - Tattoo</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -93,9 +93,9 @@
     <!-- Download Section -->
     <section id="download" class="download-section content-section text-center">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto">
-            
+        <div class="col-lg-12 mx-auto">
+          <div class="row tattoos">
+
           </div>
         </div>
       </div>
@@ -107,9 +107,9 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>  </h2>
-            <p>Feel free to leave us a comment on the
-              <a href="http://startbootstrap.com/template-overviews/grayscale/">Grayscale template overview page</a>
-              on Start Bootstrap to give some feedback about this theme!</p>
+            <p>
+              Følg mig diverse sociale medier for at se mit arbejde og følge med i diverse tilbud
+            </p>
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
                 <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
@@ -151,6 +151,52 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+
+    <script>
+        const tattooData = {
+            "tattoos": [
+                {
+                    "title": "Fætter Lasse tattoo",
+                    "customer": "Lasse",
+                    "date": "5/5/18 maj",
+                    "image": "https://i.imgur.com/B0aMV3c.jpg"
+                },
+                {
+                    "title": "Jonas tattoo right arm",
+                    "customer": "Jonas",
+                    "date": "5/5/18",
+                    "image": "https://i.imgur.com/wyd6R9q.jpg"
+                },
+                {
+                    "title": "Jonas tattoo left arm",
+                    "customer": "Joans",
+                    "date": "5/5/18",
+                    "image": "https://i.imgur.com/671AxXP.jpg"
+                },
+                {
+                    "title": "Martina tattoo",
+                    "customer": "Martina",
+                    "date": "9/5/18",
+                    "image": "https://i.imgur.com/09fCbQ0.jpg"
+                }
+            ]
+        }
+        
+    
+        function loadTattoos() {
+            tattooData.tattoos.forEach(tattoo => {
+              const tattooTemplate = `
+              <div class="col-lg-4">
+                <img src="` + tattoo.image + `" class="img-fluid" alt="Responsive image">
+              </div>
+              `;
+              $( ".tattoos" ).append(tattooTemplate);
+            });
+        }
+    
+        loadTattoos();
+    
+      </script>
 
   </body>
 
