@@ -1,29 +1,3 @@
-# [Start Bootstrap - Grayscale](https://startbootstrap.com/template-overviews/grayscale/)
-
-[Grayscale](http://startbootstrap.com/template-overviews/grayscale/) is a multipurpose, one page HTML theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
-
-## Preview
-
-[![Grayscale Preview](https://startbootstrap.com/assets/img/templates/grayscale.jpg)](https://blackrockdigital.github.io/startbootstrap-grayscale/)
-
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-grayscale/)**
-
-## Status
-
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-grayscale/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-grayscale.svg)](https://www.npmjs.com/package/startbootstrap-grayscale)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-grayscale.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-grayscale)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-grayscale/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-grayscale)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-grayscale/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-grayscale?type=dev)
-
-## Download and Installation
-
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/grayscale/)
-* Install via npm: `npm i startbootstrap-grayscale`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-grayscale.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-grayscale)
-
 ## Usage
 
 ### Basic Usage
@@ -69,3 +43,59 @@ Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework 
 ## Copyright and License
 
 Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.
+
+Note:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+        
+    <div id="tattoos" class="container">
+
+
+    </div>
+
+</body>
+<script>
+    const tattooData = {
+        "tattoos": [
+            {
+                "title": "Fætter Lasse tattoo",
+                "customer": "Lasse",
+                "date": "3. maj",
+                "image": "imgur.com"
+            },
+            {
+                "title": "Some guy tattoo",
+                "customer": "Lasse",
+                "date": "3. maj",
+                "image": "imgur.com"
+            },
+            {
+                "title": "What a tattoo",
+                "customer": "Lasse",
+                "date": "3. maj",
+                "image": "imgur.com"
+            }
+        ]
+    }
+    
+
+    function loadTattoos() {
+        tattooData.tattoos.forEach(tattoo => {
+            const tattooTemplate =  "<p> " + tattoo.title +  " </p>" 
+
+            $( "#tattoos" ).append(tattooTemplate);
+        });
+    }
+
+    loadTattoos();
+
+    </script>
+</html>
