@@ -109,17 +109,11 @@
           <div class="col-lg-8 mx-auto">
             <h2>  </h2>
             <p>
-              Følg mig på diverse sociale medier for at se mere af mit arbejde og få gode tilbud
+              Følg mig på Instagram og Facebook for at se mere af mit arbejde og få gode tilbud
             </p>
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
-                <a href="#" class="btn btn-default btn-lg">
-                  <i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn btn-default btn-lg">
+                <a href="https://www.instagram.com/majagantzi_tattoo/" target="blank" class="btn btn-default btn-lg">
                   <i class="fa fa-instagram fa-fw"></i>
                   <span class="network-name">Instagram</span>
                 </a>
@@ -179,7 +173,26 @@
                     "customer": "Martina",
                     "date": "9-5-18",
                     "image": "https://i.imgur.com/U33Sm1P.jpg"
+                },
+                {
+                    "title": "Calvin and Hobbes",
+                    "customer": "Øvehud",
+                    "date": "16-5-18",
+                    "image": "https://i.imgur.com/i8LiHTp.jpg"
+                },
+                {
+                    "title": "Cross",
+                    "customer": "John Doe",
+                    "date": "18-5-18",
+                    "image": "https://i.imgur.com/qQ9PLT4.jpg"
+                },
+                {
+                    "title": "Pineapple",
+                    "customer": "John Doe",
+                    "date": "18-5-18",
+                    "image": "https://i.imgur.com/0CgrySU.jpg"
                 }
+                
             ]
         }
         
@@ -187,7 +200,7 @@
         function loadTattoos() {
             tattooData.tattoos.forEach(tattoo => {
               const tattooTemplate = `
-              <div class="col-lg-4 mb-4 test thumbnail">
+              <div class="col-lg-4 col-md-6 mb-4 thumbnail">
                 <img src="` + tattoo.image + `" class="img-fluid tattoo-image" alt="Responsive image">
               </div>
               `;
