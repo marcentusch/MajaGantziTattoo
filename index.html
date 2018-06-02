@@ -149,67 +149,113 @@
     <script src="js/grayscale.min.js"></script>
 
     <script>
-        const tattooData = {
-            "tattoos": [
-                {
-                    "title": "Fætter Lasse tattoo",
-                    "customer": "Lasse",
-                    "date": "5-5-18",
-                    "image": "https://i.imgur.com/hBqeKLI.jpg"
-                },
-                {
-                    "title": "Jonas tattoo right arm",
-                    "customer": "Jonas",
-                    "date": "5-5-18",
-                    "image": "https://i.imgur.com/yEZWmRD.jpg"
-                },
-                {
-                    "title": "Jonas tattoo left arm",
-                    "customer": "Joans",
-                    "date": "5-5-18",
-                    "image": "https://i.imgur.com/2IqjJ0F.jpg"
-                },
-                {
-                    "title": "Martina tattoo",
-                    "customer": "Martina",
-                    "date": "9-5-18",
-                    "image": "https://i.imgur.com/U33Sm1P.jpg"
-                },
-                {
-                    "title": "Calvin and Hobbes",
-                    "customer": "Øvehud",
-                    "date": "16-5-18",
-                    "image": "https://i.imgur.com/i8LiHTp.jpg"
-                },
-                {
-                    "title": "Cross",
-                    "customer": "John Doe",
-                    "date": "18-5-18",
-                    "image": "https://i.imgur.com/qQ9PLT4.jpg"
-                },
-                {
-                    "title": "Pineapple",
-                    "customer": "John Doe",
-                    "date": "18-5-18",
-                    "image": "https://i.imgur.com/0CgrySU.jpg"
-                }
-                
-            ]
-        }
+      const tattooData = {
+        "tattoos": [
+          {
+              "date": "5-5-18",
+              "image": "https://i.imgur.com/hBqeKLI.jpg"
+          },
+          {
+              "date": "5-5-18",
+              "image": "https://i.imgur.com/yEZWmRD.jpg"
+          },
+          {
+              "date": "5-5-18",
+              "image": "https://i.imgur.com/2IqjJ0F.jpg"
+          },
+          {
+              "date": "9-5-18",
+              "image": "https://i.imgur.com/U33Sm1P.jpg"
+          },
+          {
+              "date": "16-5-18",
+              "image": "https://i.imgur.com/i8LiHTp.jpg"
+          },
+          {
+              "date": "18-5-18",
+              "image": "https://i.imgur.com/qQ9PLT4.jpg"
+          },
+          {
+              "date": "18-5-18",
+              "image": "https://i.imgur.com/0CgrySU.jpg"
+          },
+          {
+              "date": "22-5-18",
+              "image": "https://i.imgur.com/rVw0bb1.jpg"
+          },
+          {
+              "date": "22-5-18",
+              "image": "https://i.imgur.com/OjvatUV.jpg"
+          },
+          {
+              "date": "22-5-18",
+              "image": "https://i.imgur.com/R4S43om.jpg"
+          },
+          {
+              "date": "22-5-18",
+              "image": "https://i.imgur.com/9UMnHRl.jpg"
+          },
+          {
+              "date": "22-5-18",
+              "image": "https://i.imgur.com/H1IeHXa.jpg"
+          },
+          {
+              "date": "22-5-18",
+              "image": "https://i.imgur.com/Ymhkt3y.jpg"
+          },
+          {
+              "date": "24-5-18",
+              "image": "https://i.imgur.com/qrC1mfx.jpg"
+          },
+          {
+              "date": "24-5-18",
+              "image": "https://i.imgur.com/6Ogo0TA.jpg"
+          },
+          {
+              "date": "24-5-18",
+              "image": "https://i.imgur.com/cwMPLwT.jpg"
+          },
+          {
+              "date": "25-5-18",
+              "image": "https://i.imgur.com/FZJr0yK.jpg"
+          },
+          {
+              "date": "25-5-18",
+              "image": "https://i.imgur.com/E6OmpwB.jpg"
+          },
+          {
+              "date": "26-5-18",
+              "image": "https://i.imgur.com/Amo5MQz.jpg"
+          },
+          {
+              "date": "26-5-18",
+              "image": "https://i.imgur.com/Xsk5UX7.jpg"
+          },
+          {
+              "date": "30-5-18",
+              "image": "https://i.imgur.com/BNTM3Qy.jpg"
+          },
+          {
+              "date": "30-5-18",
+              "image": "https://i.imgur.com/wdH8M5A.jpg"
+          }   
+        ]
+      }
         
     
-        function loadTattoos() {
-            tattooData.tattoos.forEach(tattoo => {
-              const tattooTemplate = `
-              <div class="col-lg-4 col-md-6 mb-4 thumbnail">
-                <img src="` + tattoo.image + `" class="img-fluid tattoo-image" alt="Responsive image">
-              </div>
-              `;
-              $( ".tattoos" ).append(tattooTemplate);
-            });
-        }
-    
-        loadTattoos();
+      function loadTattoos() {
+        tattooData.tattoos.reverse();
+        tattooData.tattoos.forEach(tattoo => {
+          const tattooTemplate = `
+          <div class="col-lg-4 col-md-6 mb-4 thumbnail">
+            <img src="` + tattoo.image + `" class="img-fluid tattoo-image" alt="Responsive image">
+          </div>
+          `;
+          $( ".tattoos" ).append(tattooTemplate);
+        });
+      }
+  
+      loadTattoos();
     
       </script>
 
