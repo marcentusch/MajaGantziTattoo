@@ -223,6 +223,14 @@ a:focus, a:hover {
   background-color: #42DCA3;
 }
 
+.see-more-btn:hover {
+  color: white;
+}
+
+.see-more-btn:focus {
+  color: white;
+}
+
 ul.banner-social-buttons {
   margin-top: 0;
 }

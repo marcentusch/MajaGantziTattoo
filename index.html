@@ -97,6 +97,7 @@
           <div class="row tattoos">
 
           </div>
+          <button class="btn btn-default see-more-btn btn-large mt-4" onclick="addMoreTattoos()"> Se flere </button>
         </div>
       </div>
     </section>
@@ -248,22 +249,33 @@
         ]
       }
         
-    
+      var count = 0;
+      var imagesToSee = 9
+
       function loadTattoos() {
         tattooData.tattoos.reverse();
-        tattooData.tattoos.forEach(tattoo => {
+        for(count; count < imagesToSee; count++) {
           const tattooTemplate = `
           <div class="col-lg-4 col-md-6 mb-4 thumbnail">
-            <img src="` + tattoo.image + `" class="img-fluid tattoo-image" alt="Responsive image">
+            <img src="` + tattooData.tattoos[count].image + `" class="img-fluid tattoo-image" alt="Responsive image">
           </div>
           `;
           $( ".tattoos" ).append(tattooTemplate);
-        });
+        }
       }
   
       loadTattoos();
 
       function addMoreTattoos() {
+        imagesToSee = imagesToSee + 9;
+        for(count; count < imagesToSee; count++) {
+          const tattooTemplate = `
+          <div class="col-lg-4 col-md-6 mb-4 thumbnail">
+            <img src="` + tattooData.tattoos[count].image + `" class="img-fluid tattoo-image" alt="Responsive image">
+          </div>
+          `;
+          $( ".tattoos" ).append(tattooTemplate);
+        }
 
       }
     
