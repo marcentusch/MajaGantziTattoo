@@ -194,20 +194,15 @@ a:focus, a:hover {
 }
 
 .thumbnail {
-  transition: ease opacity .4s;
   overflow: hidden;
 }
 
 .thumbnail-container {
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .thumbnail-container:hover {
-  transform: scale(1.15);
-}
-
-.thumbnail:hover {
-  opacity: .7;
+  transform: scale(1.4);
 }
 
 .tattoos {

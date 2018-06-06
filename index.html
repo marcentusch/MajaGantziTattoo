@@ -281,11 +281,11 @@
         tattooData.tattoos.reverse();
         for(count; count < imagesToSee; count++) {
           const tattooTemplate = `
-          <a class="col-lg-4 col-md-6 mb-4 thumbnail " href="` + tattooData.tattoos[count].image + `.jpeg" target="blank">
+          <div class="col-lg-4 col-md-6 mb-4 thumbnail ">
             <div class="thumbnail-container">
               <img src="` + tattooData.tattoos[count].image + `l.jpeg" class="img-fluid tattoo-image" alt="Responsive image">
             </div>
-          </a>
+          </div>
           `;
           $( ".tattoos" ).append(tattooTemplate);
         }
@@ -303,11 +303,11 @@
 
         for(count; count < imagesToSee; count++) {
           const tattooTemplate = `
-          <a class="col-lg-4 col-md-6 mb-4 thumbnail " href="` + tattooData.tattoos[count].image + `.jpeg" target="blank">
+          <div class="col-lg-4 col-md-6 mb-4 thumbnail ">
             <div class="thumbnail-container">
               <img src="` + tattooData.tattoos[count].image + `l.jpeg" class="img-fluid tattoo-image" alt="Responsive image">
             </div>
-          </a>
+          </div>
           `;
           $( ".tattoos" ).append(tattooTemplate);
         }
