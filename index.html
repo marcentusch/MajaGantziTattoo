@@ -261,7 +261,15 @@
           {
               "date": "4-6-18",
               "image": "https://imgur.com/Hpr9gAX.jpeg"
-          }      
+          },
+          {
+              "date": "5-6-18",
+              "image": "https://imgur.com/PEvGgRS.jpeg"
+          },
+          {
+              "date": "5-6-18",
+              "image": "https://imgur.com/KVHIIoK.jpeg"
+          }
         ]
       }
         
@@ -284,6 +292,12 @@
 
       function addMoreTattoos() {
         imagesToSee = imagesToSee + 9;
+
+        //Remove button if all tattoos are shown
+        if(imagesToSee > tattooData.tattoos.length) {
+          $(".see-more-btn").hide();
+        }
+
         for(count; count < imagesToSee; count++) {
           const tattooTemplate = `
           <div class="col-lg-4 col-md-6 mb-4 thumbnail">
@@ -292,7 +306,6 @@
           `;
           $( ".tattoos" ).append(tattooTemplate);
         }
-
       }
     
       </script>
