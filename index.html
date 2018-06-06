@@ -160,118 +160,119 @@
         "tattoos": [
           {
               "date": "5-5-18",
-              "image": "https://i.imgur.com/hBqeKLI.jpg"
+              "image": "https://i.imgur.com/hBqeKLI"
           },
           {
               "date": "5-5-18",
-              "image": "https://i.imgur.com/yEZWmRD.jpg"
+              "image": "https://i.imgur.com/yEZWmRD"
           },
           {
               "date": "5-5-18",
-              "image": "https://i.imgur.com/2IqjJ0F.jpg"
+              "image": "https://i.imgur.com/2IqjJ0F"
           },
           {
               "date": "9-5-18",
-              "image": "https://i.imgur.com/U33Sm1P.jpg"
+              "image": "https://i.imgur.com/U33Sm1P"
           },
           {
               "date": "16-5-18",
-              "image": "https://i.imgur.com/i8LiHTp.jpg"
+              "image": "https://i.imgur.com/i8LiHTp"
           },
           {
               "date": "18-5-18",
-              "image": "https://i.imgur.com/qQ9PLT4.jpg"
+              "image": "https://i.imgur.com/qQ9PLT4"
           },
           {
               "date": "18-5-18",
-              "image": "https://i.imgur.com/0CgrySU.jpg"
+              "image": "https://i.imgur.com/0CgrySU"
           },
           {
               "date": "22-5-18",
-              "image": "https://imgur.com/ov4s9wR.jpeg"
+              "image": "https://imgur.com/ov4s9wR"
           },
           {
               "date": "22-5-18",
-              "image": "https://imgur.com/GKgEwVe.jpeg"
+              "image": "https://imgur.com/GKgEwVe"
           },
           {
               "date": "22-5-18",
-              "image": "https://imgur.com/k7tuJ45.jpeg"
+              "image": "https://imgur.com/k7tuJ45"
           },
           {
               "date": "22-5-18",
-              "image": "https://imgur.com/nMRLVXG.jpeg"
+              "image": "https://imgur.com/nMRLVXG"
           },
           {
               "date": "22-5-18",
-              "image": "https://imgur.com/FTyFzbH.jpeg"
+              "image": "https://imgur.com/FTyFzbH"
           },
           {
               "date": "22-5-18",
-              "image": "https://imgur.com/nWcVJfE.jpeg"
+              "image": "https://imgur.com/nWcVJfE"
           },
           {
               "date": "24-5-18",
-              "image": "https://imgur.com/MqjZnou.jpeg"
+              "image": "https://imgur.com/MqjZnou"
           },
           {
               "date": "24-5-18",
-              "image": "https://imgur.com/5b7S76c.jpeg"
+              "image": "https://imgur.com/5b7S76c"
           },
           {
               "date": "24-5-18",
-              "image": "https://imgur.com/R3oxiJd.jpeg"
+              "image": "https://imgur.com/R3oxiJd"
           },
           {
               "date": "25-5-18",
-              "image": "https://imgur.com/0AXhyJb.jpeg"
+              "image": "https://imgur.com/0AXhyJb"
           },
           {
               "date": "25-5-18",
-              "image": "https://imgur.com/uCTpQGL.jpeg"
+              "image": "https://imgur.com/uCTpQGL"
           },
           {
               "date": "26-5-18",
-              "image": "https://imgur.com/8jC6r4L.jpeg"
+              "image": "https://imgur.com/8jC6r4L"
           },
           {
               "date": "26-5-18",
-              "image": "https://imgur.com/HFpmnLm.jpeg"
+              "image": "https://imgur.com/HFpmnLm"
           },
           {
               "date": "30-5-18",
-              "image": "https://imgur.com/X7lvvkU.jpeg"
+              "image": "https://imgur.com/X7lvvkU"
           },
           {
               "date": "30-5-18",
-              "image": "https://imgur.com/OzRvjE4.jpeg"
+              "image": "https://imgur.com/OzRvjE4"
           },
           {
               "date": "1-6-18",
-              "image": "https://imgur.com/ro4VOIF.jpeg"
+              "image": "https://imgur.com/ro4VOIF"
           },
           {
               "date": "1-6-18",
-              "image": "https://imgur.com/hRTJDwW.jpeg"
+              "image": "https://imgur.com/hRTJDwW"
           },
           {
               "date": "4-6-18",
-              "image": "https://imgur.com/Bd6dOTH.jpeg"
+              "image": "https://imgur.com/Bd6dOTH"
           },
           {
               "date": "4-6-18",
-              "image": "https://imgur.com/Hpr9gAX.jpeg"
+              "image": "https://imgur.com/Hpr9gAX"
           },
           {
               "date": "5-6-18",
-              "image": "https://imgur.com/PEvGgRS.jpeg"
+              "image": "https://imgur.com/PEvGgRS"
           },
           {
               "date": "5-6-18",
-              "image": "https://imgur.com/KVHIIoK.jpeg"
+              "image": "https://imgur.com/KVHIIoK"
           }
         ]
       }
+
         
       var count = 0;
       var imagesToSee = 9
@@ -280,9 +281,11 @@
         tattooData.tattoos.reverse();
         for(count; count < imagesToSee; count++) {
           const tattooTemplate = `
-          <div class="col-lg-4 col-md-6 mb-4 thumbnail">
-            <img src="` + tattooData.tattoos[count].image + `" class="img-fluid tattoo-image" alt="Responsive image">
-          </div>
+          <a class="col-lg-4 col-md-6 mb-4 thumbnail " href="` + tattooData.tattoos[count].image + `.jpeg" target="blank">
+            <div class="thumbnail-container">
+              <img src="` + tattooData.tattoos[count].image + `l.jpeg" class="img-fluid tattoo-image" alt="Responsive image">
+            </div>
+          </a>
           `;
           $( ".tattoos" ).append(tattooTemplate);
         }
@@ -300,9 +303,11 @@
 
         for(count; count < imagesToSee; count++) {
           const tattooTemplate = `
-          <div class="col-lg-4 col-md-6 mb-4 thumbnail">
-            <img src="` + tattooData.tattoos[count].image + `" class="img-fluid tattoo-image" alt="Responsive image">
-          </div>
+          <a class="col-lg-4 col-md-6 mb-4 thumbnail " href="` + tattooData.tattoos[count].image + `.jpeg" target="blank">
+            <div class="thumbnail-container">
+              <img src="` + tattooData.tattoos[count].image + `l.jpeg" class="img-fluid tattoo-image" alt="Responsive image">
+            </div>
+          </a>
           `;
           $( ".tattoos" ).append(tattooTemplate);
         }

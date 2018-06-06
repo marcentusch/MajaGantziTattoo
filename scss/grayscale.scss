@@ -208,6 +208,23 @@ a {
   background-size: cover;
 }
 
+.thumbnail {
+  transition: ease opacity .4s;
+  overflow: hidden;
+}
+
+.thumbnail-container {
+  transition: all .2s ease-in-out;
+}
+
+.thumbnail-container:hover {
+  transform: scale(1.15);
+}
+
+.thumbnail:hover {
+  opacity: .6;
+}
+
 .tattoos {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
